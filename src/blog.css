@@ -1,0 +1,92 @@
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+h1,h2,h3,h4,h5,h6,p,div{
+	font-family: Roboto
+}
+
+.Blog-background-107{
+	    min-height:300;
+        height: 300;
+        max-height: 300;
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding-left: 20;
+        padding-right: 20;
+        border-style: solid;
+        border-color: '#ffcc00';
+        border-bottom-width: 5
+}
+
+
+[class*='Blog-content']:hover > [class*='Blog-background']{
+	filter:brightness(30%);
+	transition-property: all;
+	transition-duration: 1s;
+	animation:grow;
+	animation-duration:5s;
+	animation-fill-mode: forwards
+}
+
+
+.Blog-content-107:hover > .Blog-background-109{
+  filter:brightness(40%);
+  
+}
+
+@keyframes grow{
+	0%{transform:scale(1)}
+	100%{transform:scale(1.5)}
+}
+/* .Blog-root-106{
+  background: linear-gradient(-45deg, rgb(238, 209, 82), rgb(230, 207, 0), rgb(213, 165, 35), rgb(207, 176, 1));
+  animation: Gradient 15s ease infinite;
+  -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+} */
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+

@@ -1,0 +1,26 @@
+div > input[placeholder='Type your message here']::-moz-placeholder{
+    color:white
+}
+div > input[placeholder='Type your message here']::-webkit-input-placeholder{
+    color:white
+}
+div > input[placeholder='Type your message here']::placeholder{
+    color: white
+}
+div[class="chatBubble"]{
+            padding: 10px;
+            margin: 0px auto 20px 0px;
+            background-color: #007bffce;
+            color: white;
+            border-radius: 12px;
+            outline:none;
+            border-color:transparent;
+            font-family: 'Roboto';
+            z-index:-100;
+            min-width:10vw;
+            word-wrap: break-word;
+            max-width:70vw;
+}
+span#chatBubbleName::after{
+font-size: 12 !important
+}
